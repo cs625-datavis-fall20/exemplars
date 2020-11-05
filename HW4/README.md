@@ -26,7 +26,7 @@ Original chart:
 
 **R** ([source](bar-multiples-R-Spiros.md)) - Spiros:
 
-<img src="bar-multiples-R-Abigail.png" height="300"/>
+<img src="bar-multiples-R-Spiros.png" height="300"/>
 
 **Vega-Lite** ([source and explanation](bar-multiples-VegaLite-Dalina.md)) - Dalina:
 
