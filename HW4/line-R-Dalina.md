@@ -1,46 +1,5 @@
 # Dalina - line chart - R
 
-## Source 
-
-```r
-library(reshape2)
-library(directlabels)
-library(extrafont)
-library(tidyverse)
-font_import()
-loadfonts(device = "win")
-
-p1_lc <- read_csv("PolicyViz_WSJ_Remake_p1_line_chart_multi_line.csv")
-d <- melt(p1_lc, id.vars="Year")
-
-png(filename="p1_recreate.PNG", width=1024, height=613)
-
-ggplot(d, aes(x = Year, y = value, group = variable, colour = variable)) + 
-geom_line(lwd=1.4)+ 
-theme_bw() + 
-scale_color_manual(values=c("#1C00AF","#E70000" ,"#0A9400","#BD7F00")) +
-theme(legend.position = "none", axis.ticks = element_blank(), panel.border = element_blank(), 
-    panel.grid.major.x = element_blank(), panel.grid.minor.x = element_blank(),
-    panel.grid.major.y =element_line( size=.9, color="#CBCBCB"), panel.grid.minor.y = element_blank(), 
-    axis.title.x = element_blank(), axis.title.y = element_blank(), 
-    axis.text.x = element_text( margin = margin(t = 8), size = 21, face="bold"),  
-    axis.text.y = element_text(margin = margin(r = 10), size = 21, face="bold"), 
-    plot.margin=unit(c(.5,1.5,.3,.3),"cm"), plot.title= element_text(size=34,face="bold", hjust = -.045),  
-    plot.subtitle = element_text(size=20, margin = margin(b=28), hjust = -.07)) +
-labs(title = "Out of Work", subtitle = "Percent of families with at least one member unemployed") +
-scale_y_continuous(limits=c(0, 20), breaks = seq(0, 20, by = 2), expand = c(0,0)) +
-scale_x_continuous(labels = as.character(p1_lc$Year), breaks = p1_lc$Year, expand = c(0,0)) + 
-geom_label(aes(x=2012, y = 18, label = "Black", color = "Black"), fill="white", label.size = NA, size=6.5, 
-          hjust=-.3) + 
-geom_label(aes(x=2012, y = 13, label = "Hispanic", color = "Hispanic"), fill=NA, label.size = NA, size=6.5, 
-          hjust=-.02, vjust=.5) +
-geom_label(aes(x=2012, y = 10, label = "White", color = "White"), fill="white", label.size = NA, size=6.5, 
-          hjust=-.3) +
-geom_label(aes(x=2012, y=7, label="Asian",color="Asian"), fill = "white", label.size = NA, size=6.5, hjust=-.3)
-      
-dev.off()
-```
-
 ## Explanation
 
 The library reshape2 was used to adjust the data by using the melt()
@@ -89,4 +48,45 @@ using the aes() function.
 
 Lastly, the function dev.off() exported the chart to the png file noted
 earlier.
+
+## Source 
+
+```r
+library(reshape2)
+library(directlabels)
+library(extrafont)
+library(tidyverse)
+font_import()
+loadfonts(device = "win")
+
+p1_lc <- read_csv("PolicyViz_WSJ_Remake_p1_line_chart_multi_line.csv")
+d <- melt(p1_lc, id.vars="Year")
+
+png(filename="p1_recreate.PNG", width=1024, height=613)
+
+ggplot(d, aes(x = Year, y = value, group = variable, colour = variable)) + 
+geom_line(lwd=1.4)+ 
+theme_bw() + 
+scale_color_manual(values=c("#1C00AF","#E70000" ,"#0A9400","#BD7F00")) +
+theme(legend.position = "none", axis.ticks = element_blank(), panel.border = element_blank(), 
+    panel.grid.major.x = element_blank(), panel.grid.minor.x = element_blank(),
+    panel.grid.major.y =element_line( size=.9, color="#CBCBCB"), panel.grid.minor.y = element_blank(), 
+    axis.title.x = element_blank(), axis.title.y = element_blank(), 
+    axis.text.x = element_text( margin = margin(t = 8), size = 21, face="bold"),  
+    axis.text.y = element_text(margin = margin(r = 10), size = 21, face="bold"), 
+    plot.margin=unit(c(.5,1.5,.3,.3),"cm"), plot.title= element_text(size=34,face="bold", hjust = -.045),  
+    plot.subtitle = element_text(size=20, margin = margin(b=28), hjust = -.07)) +
+labs(title = "Out of Work", subtitle = "Percent of families with at least one member unemployed") +
+scale_y_continuous(limits=c(0, 20), breaks = seq(0, 20, by = 2), expand = c(0,0)) +
+scale_x_continuous(labels = as.character(p1_lc$Year), breaks = p1_lc$Year, expand = c(0,0)) + 
+geom_label(aes(x=2012, y = 18, label = "Black", color = "Black"), fill="white", label.size = NA, size=6.5, 
+          hjust=-.3) + 
+geom_label(aes(x=2012, y = 13, label = "Hispanic", color = "Hispanic"), fill=NA, label.size = NA, size=6.5, 
+          hjust=-.02, vjust=.5) +
+geom_label(aes(x=2012, y = 10, label = "White", color = "White"), fill="white", label.size = NA, size=6.5, 
+          hjust=-.3) +
+geom_label(aes(x=2012, y=7, label="Asian",color="Asian"), fill = "white", label.size = NA, size=6.5, hjust=-.3)
+      
+dev.off()
+```
 
