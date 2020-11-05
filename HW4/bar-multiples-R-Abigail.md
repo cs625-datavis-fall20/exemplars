@@ -1,5 +1,34 @@
 # Abigail - small multiples bar charts - R
 
+## Explanation
+
+*The libraries used were tidyr, ggplot, and grid.*
+
+1. First, the dataset needed to be read in: `data <- read.csv("Q2_Data.csv")`
+
+2. Next, ggplot likes to order the different countries alphabetically by default. To force it to keep the countries in the same order that they are in the data file, I needed to set a factor for the Area column and set the levels in the columns to the country entries themselves: `data$Area <- factor(data$Area, levels = data$Area)`
+
+3. The data contains extra columns that are not needed, so a new data frame that only contains the required columns needed to be created: `df <- data.frame(data$aLow.skilled, data$cHigh.skilled, data$bMedium.skilled, data$dTotal, data$Area)`
+
+4. Next, a list of colors and a labeller function for the facets was created. The facet labels contain spaces in order to left-align the strip text. The colors for the text are the same as the ones used for the bars.
+
+5. With setup tasks complete, ggplot could be used. In the function call, the data was gathered into key-value pairs so that the different bar charts could be created: `ggplot(data = df %>% gather(Variable, Percent, -data.Area))`. Then the x and y axes were set and geom_bar was used to created the intial grouped bar chart. The discrete scale was set to the country levels in the Area column. 
+
+6. Next the titles and colors for the four different bar charts were set.
+
+7. The facet grid was then created. The labeller was passed as an argument to properly label the facets. 
+
+8. Coordinate flip and other theme settings were then applied: 
+    * `coord_flip() `
+    * Remove legend.
+    * Set facet strip background to white and change font size.
+    * Panel grids were removed.
+    * Removed x axis and edited y axis labels.
+
+9. Finally, the strip text color needed to be altered to match the bars. To do this, the plot was converted to a grob and the strip text was grabbed using grepl. The resource for this technique can be found here: [Change color of font and background in facet strip?](https://stackoverflow.com/questions/53455092/r-ggplot2-change-colour-of-font-and-background-in-facet-strip)
+
+10. Finally, the chart could be drawn: `grid.draw(g)`
+
 ## Source
 
 ```r
@@ -78,32 +107,3 @@ for (i in 1:length(strip_bg_gpath)){
 grid.draw(g)
 
 ```
-
-## Explanation
-
-*The libraries used were tidyr, ggplot, and grid.*
-
-1. First, the dataset needed to be read in: `data <- read.csv("Q2_Data.csv")`
-
-2. Next, ggplot likes to order the different countries alphabetically by default. To force it to keep the countries in the same order that they are in the data file, I needed to set a factor for the Area column and set the levels in the columns to the country entries themselves: `data$Area <- factor(data$Area, levels = data$Area)`
-
-3. The data contains extra columns that are not needed, so a new data frame that only contains the required columns needed to be created: `df <- data.frame(data$aLow.skilled, data$cHigh.skilled, data$bMedium.skilled, data$dTotal, data$Area)`
-
-4. Next, a list of colors and a labeller function for the facets was created. The facet labels contain spaces in order to left-align the strip text. The colors for the text are the same as the ones used for the bars.
-
-5. With setup tasks complete, ggplot could be used. In the function call, the data was gathered into key-value pairs so that the different bar charts could be created: `ggplot(data = df %>% gather(Variable, Percent, -data.Area))`. Then the x and y axes were set and geom_bar was used to created the intial grouped bar chart. The discrete scale was set to the country levels in the Area column. 
-
-6. Next the titles and colors for the four different bar charts were set.
-
-7. The facet grid was then created. The labeller was passed as an argument to properly label the facets. 
-
-8. Coordinate flip and other theme settings were then applied: 
-    * `coord_flip() `
-    * Remove legend.
-    * Set facet strip background to white and change font size.
-    * Panel grids were removed.
-    * Removed x axis and edited y axis labels.
-
-9. Finally, the strip text color needed to be altered to match the bars. To do this, the plot was converted to a grob and the strip text was grabbed using grepl. The resource for this technique can be found here: [Change color of font and background in facet strip?](https://stackoverflow.com/questions/53455092/r-ggplot2-change-colour-of-font-and-background-in-facet-strip)
-
-10. Finally, the chart could be drawn: `grid.draw(g)`
