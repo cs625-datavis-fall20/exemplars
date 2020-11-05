@@ -8,13 +8,13 @@ Original chart:
 
 <img src="https://policyviz.com/wp-content/uploads/2018/02/PolicyViz_WSJ_Remake_LineChart-1024x613.png" height="300"/>
 
-R ([source](line-R-Dalina.md)) - Dalina:
+R ([source and explanation](line-R-Dalina.md)) - Dalina:
 
 <img src="line-R-Dalina.png" height="300"/>
 
+Tableau ([explanation](line-Tableau-Heramb.md)) - Heramb:
 
-* Tableau - Heramb
-https://github.com/cs625-datavis-fall20/hw4-recreate-Heramb001/blob/master/images/part-1-A-tableau.png
+<img src="line-Tableau-Heramb.png" height="300"/>
 
 https://policyviz.com/wp-content/uploads/2017/11/PolicyViz_OECDStackedColumnChartRemake.png
 * Vega-Lite - Dalina
