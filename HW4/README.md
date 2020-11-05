@@ -28,10 +28,12 @@ Vega-Lite ([source and explanation](bar-multiples-VegaLite-Heramb.md)) - Heramb:
 
 https://github.com/cs625-datavis-fall20/hw4-recreate-Heramb001/blob/master/images/part-2-b-vegalite.png
 
-R ([source and explanation])(bar-multiples-R-Abigail.md)) - Abigail:
+R ([source and explanation](bar-multiples-R-Abigail.md)) - Abigail:
+
 https://github.com/cs625-datavis-fall20/hw4-recreate-a-mabe/blob/master/report_files/figure-markdown_strict/unnamed-chunk-1-1.png
 
-R ([source and explanation])(bar-multiples-R-Spiros.md)) - Spiros:
+R ([source and explanation](bar-multiples-R-Spiros.md)) - Spiros:
+
 https://github.com/cs625-datavis-fall20/hw4-recreate-spyridon97/blob/master/report_files/figure-gfm/unnamed-chunk-1-1.png
 
 ## Chart 3
