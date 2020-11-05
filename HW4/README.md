@@ -24,7 +24,7 @@ Original chart:
 
 <img src="bar-multiples-R-Abigail.png" height="300"/>
 
-**R** ([source and explanation](bar-multiples-R-Spiros.md)) - Spiros:
+**R** ([source](bar-multiples-R-Spiros.md)) - Spiros:
 
 <img src="bar-multiples-R-Abigail.png" height="300"/>
 
@@ -48,11 +48,15 @@ Original chart:
 ## Chart 4
 Original chart: 
 
-<img src="https://policyviz.com/wp-content/uploads/2018/02/PolicyViz_USDARemake_SlopeChart_RedBlue-600x359.png" height="300"/>
+<img src="https://policyviz.com/wp-content/uploads/2018/02/PolicyViz_USDARemake_SlopeChart-600x362.png" height="300" />
 
 **Vega-Lite** ([source and explanation](slope-VegaLite-Trupti.md)) - Trupti:
 
 <img src="slope-VegaLite-Trupti.png" height="300"/>
+
+Original chart:
+
+<img src="https://policyviz.com/wp-content/uploads/2018/02/PolicyViz_USDARemake_SlopeChart_RedBlue-600x359.png" height="300"/>
 
 **Tableau** ([explanation](slope-Tableau-Caroline.md)) - Caroline:
 
