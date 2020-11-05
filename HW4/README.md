@@ -7,11 +7,11 @@ Original chart:
 
 <img src="https://policyviz.com/wp-content/uploads/2018/02/PolicyViz_WSJ_Remake_LineChart-1024x613.png" height="300"/>
 
-R ([source and explanation](line-R-Dalina.md)) - Dalina:
+**R** ([source and explanation](line-R-Dalina.md)) - Dalina:
 
 <img src="line-R-Dalina.png" height="300"/>
 
-Tableau ([explanation](line-Tableau-Heramb.md)) - Heramb:
+**Tableau** ([explanation](line-Tableau-Heramb.md)) - Heramb:
 
 <img src="line-Tableau-Heramb.png" height="300"/>
 
@@ -20,38 +20,42 @@ Original chart:
 
 <img src="https://policyviz.com/wp-content/uploads/2017/11/PolicyViz_OECDStackedColumnChartRemake.png" height="300"/>
 
-Vega-Lite ([source and explanation](bar-multiples-VegaLite-Dalina.md)) - Dalina:
+**R** ([source and explanation](bar-multiples-R-Abigail.md)) - Abigail:
 
-https://github.com/cs625-datavis-fall20/hw4-recreate-dgitty/blob/master/p2_recreate.png
+<img src="bar-multiples-R-Abigail.png" height="300"/>
 
-Vega-Lite ([source and explanation](bar-multiples-VegaLite-Heramb.md)) - Heramb:
+**R** ([source and explanation](bar-multiples-R-Spiros.md)) - Spiros:
 
-https://github.com/cs625-datavis-fall20/hw4-recreate-Heramb001/blob/master/images/part-2-b-vegalite.png
+<img src="bar-multiples-R-Abigail.png" height="300"/>
 
-R ([source and explanation](bar-multiples-R-Abigail.md)) - Abigail:
+**Vega-Lite** ([source and explanation](bar-multiples-VegaLite-Dalina.md)) - Dalina:
 
-https://github.com/cs625-datavis-fall20/hw4-recreate-a-mabe/blob/master/report_files/figure-markdown_strict/unnamed-chunk-1-1.png
+<img src="bar-multiples-VegaLite-Dalina.png" height="300"/>
 
-R ([source and explanation](bar-multiples-R-Spiros.md)) - Spiros:
+**Vega-Lite** ([source and explanation](bar-multiples-VegaLite-Heramb.md)) - Heramb:
 
-https://github.com/cs625-datavis-fall20/hw4-recreate-spyridon97/blob/master/report_files/figure-gfm/unnamed-chunk-1-1.png
+<img src="bar-multiples-VegaLite-Heramb.png" height="300"/>
 
 ## Chart 3
 Original chart: 
 
 <img src="https://policyviz.com/wp-content/uploads/2018/02/PolicyViz_WSJ_Remake_SmallMultiples-1024x615.png" height="300"/>
 
-R ([source and explanation](line-multiples-R-Caroline.md) - Caroline:
-https://github.com/cs625-datavis-fall20/hw4-recreate-cgran010/blob/master/Report_files/figure-gfm/unnamed-chunk-2-1.png
+**R** ([source and explanation](line-multiples-R-Caroline.md) - Caroline:
+
+<img src="line-multiples-R-Caroline.png" height="300"/>
 
 ## Chart 4
 Original chart: 
 
 <img src="https://policyviz.com/wp-content/uploads/2018/02/PolicyViz_USDARemake_SlopeChart_RedBlue-600x359.png" height="300"/>
 
-Tableau ([explanation](slope-Tableau-Caroline.md)) - Caroline:
-https://github.com/cs625-datavis-fall20/hw4-recreate-cgran010/blob/master/Part%202%20Tableau.png
+**Vega-Lite** ([source and explanation](slope-VegaLite-Trupti.md)) - Trupti:
 
-Vega-Lite ([source and explanation](slope-VegaLite-Trupti.md)) - Trupti:
-https://github.com/cs625-datavis-fall20/hw4-recreate-TruptiVaity/blob/master/report_files/figure-gfm/slope_chart.png
+<img src="slope-VegaLite-Trupti.png" height="300"/>
+
+**Tableau** ([explanation](slope-Tableau-Caroline.md)) - Caroline:
+
+<img src="slope-Tableau-Caroline.png" height="300"/>
+
 
